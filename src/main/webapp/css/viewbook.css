@@ -1,0 +1,65 @@
+@charset "ISO-8859-1";
+
+main {
+	display: flex;
+	justify-content: center;
+}
+
+.main {
+	width: 1000px;
+	margin-top: 30px;
+}
+
+.main-content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.image, img {
+	height: 400px;
+}
+
+.title-and-description {
+	width: 450px;
+	margin-left: 20px;
+}
+
+.price-details {
+	width: 150px;
+	margin-top: 70px;
+	margin-left: 20px;
+	text-align: center;
+}
+
+@media only screen and (max-width: 500px){
+	
+	.image {
+		width: 500px;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.details {
+	margin-top: 50px;
+	display : flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.details p {
+	margin: 10px 10px 0px 10px;
+}
+
+
+.cartadded {
+	background-color: green;
+	border: 1px solid green;
+}
+
+.cartadded:hover {
+	border: 1px solid green;
+	color: green;
+}
