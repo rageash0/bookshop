@@ -1,0 +1,362 @@
+@charset "ISO-8859-1";
+
+*{
+	font-family: sans-serif;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 20px 20px;
+	align-items: center;
+}
+
+.search-bar-section {
+	padding: 10px 0px 30px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.categories {
+	margin-right: 10px;
+}
+
+a {
+	text-decoration: none;
+	margin-left: 10px;
+	color: #828282;
+}
+
+a:hover {
+	color: black;
+}
+
+.project-title {
+	font-weight: bolder;
+	font-size: 30px;
+	color: #ff8040;
+}
+
+.project-title:hover {
+	color: #ff8040;
+}
+
+.banner {
+	height: 300px;
+	object-fit: cover;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center; 
+	background-color: lightgray;
+}
+
+h1 {
+	color: #fdb14a;
+}
+
+p {
+	margin-top: 30px;
+}
+
+.profile {
+	margin-top: 10px;
+}
+
+.button{
+	background-color: #0080ff;
+	border: none;
+	color: white;
+	line-height: 2;
+	padding: 2px 25px 2px 25px;
+	border-radius: 25px;
+}
+
+.button:hover{
+	background-color: #0065ca;
+}
+
+.form-section {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.login-form, .register-form {
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.login-form h2, .register-form h2 {
+	margin-top: 30px;
+}
+
+.login-form form, .register-form form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 30px;
+	text-align: center;
+}
+
+.text {
+	line-height: 2;
+	width: 250px;
+}
+
+.text-margin {
+	margin-top: 10px;
+}
+
+.login-button-margin, .register-button-margin, .button-margin{
+	margin-top: 30px;
+}
+
+.message {
+	color: red;
+	margin-top: 10px;
+}
+
+section {
+	margin: 50px 20px;
+}
+
+.book-section{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.book-product {
+	width: 200px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align: center;
+	padding: 20px 5px 20px 5px;
+}
+
+.book-product:hover {
+	box-shadow: 5px 5px 10px #c5c5c5;
+}
+
+.book-product p {
+	margin: 5px 0px 0px 0px;
+}
+
+.title {
+	font-weight: bolder;
+	color: #454545;
+}
+
+.author {
+	font-style: italic;
+	color: #8f8f8f;
+}
+
+.price {
+	font-weight: bold;
+	color: red;
+}
+
+.book {
+	height: 200px;
+}
+
+.dropdown {
+	display: inline-block;
+	position: relative;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	width: 100%;
+	overflow: auto;
+	background-color: white;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+	visibility: visible;
+}
+
+.main-content {
+	display: flex;
+	flex-direction: row;
+}
+
+.category-section {
+	width: 250px;
+}
+
+th {
+	min-width: 100px;
+	background-color: darkblue;
+	color: white;
+	margin: 0px 2px 0px 2px;
+}
+
+td {
+	min-width: 100px;
+	margin: 0px 2px 0px 2px;
+	border: 1px solid black;
+}
+
+footer {
+	min-height: 300px;
+	margin-top: 30px;
+	padding: 10px 20px 10px 20px;
+	background-color: #000066;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	color: white;
+}
+
+footer div {
+	width: 350px;
+}
+
+.about-us-section p{
+	color: darkgray;
+	padding: 5px 0px 5px;
+}
+
+.link-section {
+	display: flex;
+	flex-direction: column;
+}
+
+.link-section a{
+	color: darkgray;
+	padding: 2px 0px 2px;
+}
+
+.link-section a{
+	text-decoration: underline;
+}
+
+.link-section a:hover{
+	color: white;
+}
+
+.contact-us-section p {
+	color: darkgray;
+	padding: 5px 0px 5px;
+}
+
+.wholesale-section {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.proceed-wholesale-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.proceed-wholesale-section form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+@media only screen and (orientation: portrait){
+	
+	.book-section {
+		justify-content: space-around;
+	}
+	
+	.project-title {
+		font-size: 60px;
+	}
+	
+	.banner {
+		width: 200%;
+		height: 600px;
+	}
+	
+	a {
+		font-size: 40px;
+	}
+	
+	h2 {
+		font-size: 50px;
+	}
+	
+	.button {
+		font-size: 35px;
+	}
+	
+	.text {
+		min-height: 50px;
+		font-size: 40px;
+		width: 400px;
+	}
+	
+	.book-product {
+		width: 400px;
+	}
+	
+	.book {
+		height: 400px;
+	}
+	
+	.message {
+		font-size: 40px;
+	}
+	
+	footer div {
+		width: auto;
+	}
+	
+	footer {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	p {
+		font-size: 12px;
+	}
+
+	.book-product p {
+		font-size: 40px;
+	} 
+	
+	.register-form div label{
+		font-size: 40px;
+	}
+	
+	.register-form div select {
+		height: 50px;
+		font-size: 30px;
+	}
+	
+	.text-margin {
+		margin-top: 15px;
+	}
+	
+	.wholesale-section {
+		flex-direction: column;
+	}
+	
+	.form-section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}

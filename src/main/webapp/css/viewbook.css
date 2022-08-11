@@ -1,0 +1,104 @@
+@charset "ISO-8859-1";
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.main {
+	margin-top: 30px;
+	height: auto;
+}
+
+.main-content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.image, img {
+	height: 400px;
+}
+
+.title-and-description {
+	width: 450px;
+	margin-left: 20px;
+}
+
+.price-details {
+	width: 150px;
+	margin-top: 70px;
+	margin-left: 20px;
+	text-align: center;
+}
+
+@media only screen and (max-width: 500px){
+	
+	.image {
+		width: 500px;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.details {
+	margin-top: 50px;
+	display : flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.details p {
+	margin: 10px 10px 0px 10px;
+}
+
+
+.cartadded {
+	background-color: green;
+	border: 1px solid green;
+}
+
+.cartadded:hover {
+	border: 1px solid green;
+	color: green;
+}
+
+@media only screen and (orientation: portrait){
+	
+	.image {
+		display: flex;
+		justify-content: center;
+	}
+	
+	.image, img {
+		height: 1000px;
+	}
+	
+	.main-content {
+		flex-direction: column;
+	}
+	
+	.title-and-description p {
+		margin: 0px 0px 0px 0px;
+		font-size: 3em;
+	}
+	
+	.price-details {
+		width: auto;
+	}
+	
+	.price {
+		font-size: 3em;
+	}
+	
+	.details {
+		height: auto;
+	}
+	
+	.details p {
+		margin: 0;
+		font-size: 2em;
+	}
+}

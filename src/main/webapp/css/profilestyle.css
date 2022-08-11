@@ -1,0 +1,44 @@
+@charset "ISO-8859-1";
+
+
+.profile-content {
+	margin-left: 50px;
+}
+
+.profile-details {
+	margin-top: 20px;
+	background-color: #d3eaf1;
+	padding: 10px 20px 10px 40px;
+}
+
+.navigation{
+	margin-top: 50px; 
+	display:flex;
+	justify-content: space-between;
+}
+
+.details-block p {
+	margin-top: 5px;
+}
+
+.details-block {
+	border: 1px solid lightgray;
+	margin-top: 15px;
+}
+
+@media only screen and (orientation: portrait){
+	
+	.username {
+		font-size: 40px;
+	}
+	
+	.navigation div {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	
+	.details-block {
+		border: 5px solid #c0c0c0;
+	}
+}

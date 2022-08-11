@@ -1,0 +1,43 @@
+@charset "ISO-8859-1";
+
+.checkout-content {
+	margin: 10px 20px 0px 20px; 
+}
+
+.checkout-session {
+	margin-top: 30px;
+}
+
+.checkout-book-block {
+	display:flex;
+	flex-direction: row;
+	padding: 10px 10px 10px 10px;
+}
+
+.checkout-book-details .title {
+	margin-top: 0px;
+}
+
+p{
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.checkout-button{
+	text-align: right;
+	margin-top: 30px;
+}
+
+.checkout-button button {
+	margin-right: 20px;
+}
+
+@media only screen and (orientation: portrait){
+	p {
+		font-size: 40px;
+	}
+	
+	h1 {
+		font-size: 80px;
+	}
+}
